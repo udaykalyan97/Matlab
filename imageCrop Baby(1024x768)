@@ -1,0 +1,9 @@
+cd('C:\users\undelau\Desktop\edited');
+mkdir C:\users\undelau\Desktop lastName
+for i=1:50
+I=imread(sprintf('baby (%s).jpg',num2str(i)));
+croppedImage = imresize(I, [768, 1024]);
+imshow(croppedImage)
+filename=['C:\users\undelau\Desktop\photos\',sprintf('baby (%s).bmp',num2str(i))]
+imwrite(croppedImage,filename);
+end
